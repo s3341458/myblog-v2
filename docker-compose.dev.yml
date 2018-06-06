@@ -2,8 +2,9 @@ version: '3'
 
 services:
   db:
-    volumes:
-      - ./data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "myblog"
+      POSTGRES_PASSWORD: "password"
     ports:
       - "5432:5432"
   web:
