@@ -9,14 +9,20 @@
         height: 3em;
         font-size: 20px;
         background: #111;
-        align-items: center;
+        align-items: stretch;
         justify-content: flex-start;
       }
       .nav-menu > li {
         flex: 0 1 200px;
         color: white;
         display: flex;
+        height: auto;
         justify-content: center;
+        align-items: center;
+      }
+      .nav-menu > .nav-chosen {
+        background: white;
+        color: #111;
       }
       @media (max-width: 480px) {
         .nav-menu {
@@ -37,11 +43,7 @@
 		<title>Cheng Homepage</title>
 	</head>
 	<body>
-    <ul class="nav-menu">
-      <li>About Me</li>
-      <li>My Blogs</li>
-      <li>Timeline</li>
-    </ul>
+    {% include 'includes/nav.html' with tab=1 %}
 		<div id="header">
 			<p id="name">Cheng Yu</p>
 			<a href="mailto:chengyu0316@gmail.com"><p id="email">chengyu0316@gmail.com</p></a>
