@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <style>
+      .nav-menu {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        height: 3em;
+        font-size: 20px;
+        background: #111;
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+      .nav-menu > li {
+        flex: 0 1 200px;
+        display: flex;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav-menu > li > a {
+        text-decoration: none;
+        color: white;
+      }
+      .nav-menu > .nav-chosen {
+        background: white;
+      }
+      .nav-menu > .nav-chosen > a {
+        color: #111;
+      }
+      .skills-board {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .skills-pane {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px 20px;
+        flex-direction: column;
+      }
+      @media (max-width: 500px) {
+        .nav-menu {
+          height: 6em;
+          font-size: 24px;
+          margin: 0;
+          padding: 0;
+          background: #111;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .nav-menu > li {
+          align-items: center;
+        }
+        .skills-board {
+          flex-direction: column;
+        }
+      }
+    </style>
+		<title>Cheng Homepage</title>
+	</head>
+	<body>
+    {% block content %}
+    {% endblock %}
+		<div>
+			<p>© Copyright Cheng Yu 2018 - present | Powered by Django & Hypersh</p>
+		</div>
+	</body>
+</html>
+

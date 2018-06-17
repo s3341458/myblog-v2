@@ -25,7 +25,7 @@ SECRET_KEY = 'o=klo^5t6-q24m!(%&y@ou%g72tu6vnpbtivdli1pzgdbfux#q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG") == "True"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "yucheng.life"]
 
 
 # Application definition

@@ -1,10 +1,13 @@
-from django.shortcuts import render
-from django.template import loader
-from django.http import HttpResponse
+from django.views.generic import TemplateView
 
-# Create your views here.
-def index(request):
-    template = loader.get_template('index.html')
-    context = {}
-    return HttpResponse(template.render(context, request))
 
+class IndexView(TemplateView):
+    template_name = "index.html"
+
+
+class BlogView(TemplateView):
+    template_name = "blog.html"
+
+
+class TimelineView(TemplateView):
+    template_name = "timeline.html"
