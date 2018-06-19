@@ -21,7 +21,7 @@ services:
       POSTGRES_USER: "myblog"
       POSTGRES_PASSWORD: "password"
     volumes:
-      - ./:/code
+      - ./myblog:/code
     ports:
       - "8000:8000"
 
