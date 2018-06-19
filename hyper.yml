@@ -7,6 +7,7 @@ services:
       - pgdata:/var/lib/postgresql/data
     env_file:
       - prod.env
+    size: s2
     ports:
       - 5432
 
@@ -21,4 +22,5 @@ services:
       - prod.env
     ports:
       - "80:8000"
+    size: s3
     fip: 209.177.88.14
