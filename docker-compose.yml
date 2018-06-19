@@ -12,11 +12,14 @@ services:
       - "5432:5432"
   web:
     build: .
+    image: chengyu0316/myblog_v2
     depends_on:
       - db
-    command: python3 manage.py runserver 0.0.0.0:8000
+    command: ./wait-for-postgres.sh db python3 manage.py runserver 0.0.0.0:8000
     environment:
       DEBUG: "True"
+      POSTGRES_USER: "myblog"
+      POSTGRES_PASSWORD: "password"
     volumes:
       - ./:/code
     ports:

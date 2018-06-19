@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    env_file:
+      - prod.env
+    ports:
+      - 5432
+
+  web:
+    image: chengyu0316/myblog_v2:latest
+    depends_on:
+      - db
+    links:
+      - db:db
+    command: ./wait-for-postgres.sh db gunicorn -w 4 -b 0.0.0.0:8000 myblog.wsgi
+    env_file:
+      - prod.env
+    ports:
+      - "80:8000"
+    fip: 209.177.88.14

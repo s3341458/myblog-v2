@@ -23,9 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'o=klo^5t6-q24m!(%&y@ou%g72tu6vnpbtivdli1pzgdbfux#q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG") == "True"
+# DEBUG = os.environ.get("DEBUG") == "True"
+DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "yucheng.life"]
+ALLOWED_HOSTS = ["localhost", "yucheng.life", "209.177.88.14"]
 
 
 # Application definition
@@ -77,9 +78,9 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get("DB_NAME", "myblog"),
-        'USER': os.environ.get("DB_USER", "myblog"),
-        'PASSWORD': os.environ.get("DB_PASSWORD", "password"),
+        'NAME': os.environ.get("POSTGRES_USER", "myblog"),
+        'USER': os.environ.get("POSTGRES_USER", "myblog"),
+        'PASSWORD': os.environ.get("POSTGRES_PASSWORD", "password"),
         'HOST': 'db',
         'PORT': 5432,
     }
