@@ -11,7 +11,9 @@ services:
     ports:
       - "5432:5432"
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: myblog/Dockerfile
     image: chengyu0316/myblog_v2
     depends_on:
       - db
