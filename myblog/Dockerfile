@@ -7,3 +7,4 @@ WORKDIR /code
 RUN pip install -r requirements.txt
 USER 1000:1000
 EXPOSE 8000
+ENTRYPOINT [ "./entrypoint.sh" ]

@@ -5,9 +5,8 @@ services:
     image: postgres
     volumes:
       - pgdata:/var/lib/postgresql/data
-    environment:
-      POSTGRES_USER: "myblog"
-      POSTGRES_PASSWORD: "password"
+    env_file:
+      - dev.env
     ports:
       - "5432:5432"
   web:
@@ -17,15 +16,21 @@ services:
     image: chengyu0316/myblog_v2
     depends_on:
       - db
-    command: ./wait-for-postgres.sh db python3 manage.py runserver 0.0.0.0:8000
-    environment:
-      DEBUG: "True"
-      POSTGRES_USER: "myblog"
-      POSTGRES_PASSWORD: "password"
+    env_file:
+      - dev.env
     volumes:
       - ./myblog:/code
     ports:
       - "8000:8000"
+  proxy:
+    build:
+      context: .
+      dockerfile: caddy/Dockerfile
+    image: chengyu0316/caddy
+    env_file:
+      - dev.env
+    ports:
+      - "80:80"
 
 volumes:
   pgdata:
