@@ -1,5 +1,11 @@
 <ul class="nav-menu">
-  <li {% if tab == 1 %}class="nav-chosen"{% endif %}><a href="{% url 'index' %}">About Me</a></li>
-  <li {% if tab == 2 %}class="nav-chosen"{% endif %}><a href="{% url 'blog' %}">My Blog</a></li>
-  <li {% if tab == 3 %}class="nav-chosen"{% endif %}><a href="{% url 'timeline' %}">Timeline</a></li>
+  <a href="{% url 'index' %}" {% if tab == 1 %}class="nav-chosen"{% endif %}>
+    <li >About Me</li>
+  </a>
+  <a href="{% url 'blog' %}" {% if tab == 2 %}class="nav-chosen"{% endif %}>
+    <li>My Blog</li>
+  </a>
+  <a href="{% url 'timeline' %}"  {% if tab == 3 %}class="nav-chosen"{% endif %}>
+    <li>Timeline</li>
+  </a>
 </ul>

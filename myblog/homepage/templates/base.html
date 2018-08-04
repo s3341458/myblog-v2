@@ -12,21 +12,20 @@
         align-items: stretch;
         justify-content: flex-start;
       }
-      .nav-menu > li {
+      .nav-menu > a {
+        text-decoration: none;
+        color: white;
         flex: 0 1 200px;
         display: flex;
         height: auto;
         justify-content: center;
         align-items: center;
       }
-      .nav-menu > li > a {
-        text-decoration: none;
-        color: white;
+      .nav-menu > a > li {
+        display: flex;
       }
       .nav-menu > .nav-chosen {
         background: white;
-      }
-      .nav-menu > .nav-chosen > a {
         color: #111;
       }
       .skills-board {
@@ -39,7 +38,7 @@
         margin: 0px 20px;
         flex-direction: column;
       }
-      @media (max-device-width: 600px) {
+      @media screen and (max-device-width: 600px), screen and (max-width: 600px) {
         .nav-menu {
           height: 6em;
           font-size: 50px;
