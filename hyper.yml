@@ -8,8 +8,6 @@ services:
     env_file:
       - prod.env
     size: s2
-    ports:
-      - 5432
   web:
     image: chengyu0316/myblog_v2:latest
     depends_on:
@@ -19,8 +17,6 @@ services:
     env_file:
       - prod.env
     size: s3
-    ports:
-      - "8000:8000"
   proxy:
     image: chengyu0316/caddy:latest
     env_file:
