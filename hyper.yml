@@ -3,6 +3,7 @@ version: '2'
 services:
   db:
     image: postgres
+    restart: on-failure
     volumes:
       - pgdata:/var/lib/postgresql/data
     env_file:
@@ -10,6 +11,7 @@ services:
     size: s2
   web:
     image: chengyu0316/myblog_v2:latest
+    restart: on-failure
     depends_on:
       - db
     links:
@@ -19,6 +21,7 @@ services:
     size: s3
   proxy:
     image: chengyu0316/caddy:latest
+    restart: on-failure
     env_file:
       - prod.env
     volumes:
