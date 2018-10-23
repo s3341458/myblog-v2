@@ -13,5 +13,5 @@ if [[ $DEBUG = "True" ]]
 then
     python3 manage.py runserver 0.0.0.0:8000
 else
-    gunicorn -w 4 -b 0.0.0.0:8000 myblog.wsgi
+    gunicorn -w $GUNICORN_WORKER_NUM -k $GUNICORN_WORKER_CLASS -b 0.0.0.0:8000 myblog.wsgi
 fi
