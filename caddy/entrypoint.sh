@@ -5,6 +5,7 @@ $HOST_DOMAIN
 
 gzip
 log /var/log/caddy_access.log
+log /var/log/caddy_errors.log
 proxy / $PROXY_DOMAIN
 ENDFILE
 
