@@ -1,9 +1,0 @@
-FROM python:3
-MAINTAINER chengyu0316@gmail.com
-RUN apt-get update && apt-get install -y postgresql-client
-ENV PYTHONUNBUFFERED 1
-ADD ./myblog/ /code/
-WORKDIR /code
-RUN pip install -r requirements.txt
-EXPOSE 8000
-ENTRYPOINT [ "./entrypoint.sh" ]

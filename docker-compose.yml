@@ -1,36 +1,38 @@
 version: '2'
 
 services:
-  db:
-    image: postgres
+  react:
+    extends:
+      file: docker-compose-base.yml
+      service: react
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - ./react_frontend:/app
+      - react_build:/app/dist
     env_file:
       - dev.env
     ports:
-      - "5432:5432"
-  web:
-    build:
-      context: .
-      dockerfile: myblog/Dockerfile
-    image: chengyu0316/myblog_v2
-    depends_on:
-      - db
+      - "3000:8000"
+      - "35729:35729"
+  nginx_proxy:
+    extends:
+      file: docker-compose-base.yml
+      service: nginx_proxy
     env_file:
       - dev.env
     volumes:
-      - ./myblog:/code
+      - react_build:/usr/share/nginx/html
     ports:
-      - "8000:8000"
-  proxy:
-    build:
-      context: .
-      dockerfile: caddy/Dockerfile
-    image: chengyu0316/caddy
+      - "81:80"
+  caddy_proxy:
+    extends:
+      file: docker-compose-base.yml
+      service: caddy_proxy
+    volumes:
+      - react_build:/caddy_server/react_build
     env_file:
       - dev.env
     ports:
       - "80:80"
 
 volumes:
-  pgdata:
+    react_build:
