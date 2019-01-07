@@ -1,2 +1,4 @@
 *.pyc
 prod.env
+gcp_pw_credentials.json
+*.pem

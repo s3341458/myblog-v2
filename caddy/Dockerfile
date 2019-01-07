@@ -1,6 +1,11 @@
-FROM ubuntu:xenial
+FROM chengyu0316/myblog_v2_react
+RUN yarn build
+
+FROM abiosoft/caddy
 MAINTAINER chengyu0316@gmail.com
-RUN apt-get update && apt-get install -y ca-certificates curl
-ADD ./caddy/ /caddy_server/
+
+ADD ./caddy /caddy_server/
+COPY --from=0 /app/dist /caddy_server/react_build
+
 WORKDIR /caddy_server
 ENTRYPOINT [ "./entrypoint.sh" ]
