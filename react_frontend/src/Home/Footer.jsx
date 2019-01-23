@@ -8,97 +8,100 @@ function Footer() {
         <Row>
           <Col lg={6} sm={24} xs={24}>
             <div className="footer-center">
-              <h2>Ant Design</h2>
+              <h2>Favourite Languages</h2>
               <div>
-                <a target="_blank " href="https://github.com/ant-design/ant-design-pro">
-                  Ant Design Pro GitHub
+                <a target="_blank " href="https://www.haskell.org/">
+                  Haskell
                 </a>
               </div>
               <div>
-                <a target="_blank " href="http://ant.design">
-                  Ant Design
+                  <a target="_blank " href="https://www.javascript.com/">
+                  Javascript
                 </a>
               </div>
               <div>
-                <a href="http://mobile.ant.design">Ant Design Mobile</a>
+                <a target="_blank " href="https://www.python.org/">
+                  Python
+                </a>
               </div>
               <div>
-                <a href="http://ng.ant.design">NG-ZORRO</a>
-                <span> - </span>
-                Ant Design of Angular
+                <a target="_blank " href="https://golang.org/">
+                  Go
+                </a>
               </div>
               <div>
-                <a target="_blank " href="https://github.com/websemantics/awesome-ant-design">
-                  Awesome Ant Design
+                <a target="_blank" href="https://www.rust-lang.org/">
+                  Rust
                 </a>
               </div>
             </div>
           </Col>
           <Col lg={6} sm={24} xs={24}>
             <div className="footer-center">
-              <h2>Ant Design</h2>
+              <h2>Projects Involved</h2>
               <div>
-                <a href="http://scaffold.ant.design">Scaffolds</a>
+                <a href="https://merchi.co/">Merchi.co</a>
                 <span> - </span>
-                <span>脚手架市场</span>
+                <span>Flask, Sqlalchemy, JQuery</span>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="http://motion.ant.design">Ant Motion</a>
+                <a target="_blank" rel="noopener" href="https://www.dimeo.com.au/">Dimeo</a>
                 <span> - </span>
-                <span>设计动效</span>
+                <span>Raspberry Pi, Django</span>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="http://library.ant.design/">Axure Library</a>
+                <a target="_blank" rel="noopener" href="https://www.meerqat.com.au/">Meerqat</a>
                 <span> - </span>
-                <span>Axure 部件库</span>
+                <span>Meteorjs, React, Django, CSS</span>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="http://ux.ant.design">Ant UX</a>
+                <a target="_blank" rel="noopener" href="https://www.commoncode.io">Commoncode Website</a>
                 <span> - </span>
-                <span>页面逻辑素材</span>
+                <span>Django, CSS</span>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="https://github.com/dvajs/dva">dva </a>
+                <a target="_blank" rel="noopener" href="https://www.ch2.net.au/">CH2 Direct</a>
                 <span> - </span>
-                <span> 应用框架</span>
+                <span>PHP</span>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="https://github.com/dvajs/dva-cli">dva-cli </a>
+                  <a target="_blank" rel="noopener" href="http://agrinous.com/">Angrinous</a>
                 <span> - </span>
-                <span> 开发工具</span>
+                <span>Django, PHP, Android, React</span>
+              </div>
+              <div>
+                <a target="_blank" rel="noopener" href="https://lexer.io/">Lexer social demographics analysis</a>
+                <span> - </span>
+                <span>Python, scikit-learn</span>
               </div>
             </div>
           </Col>
           <Col lg={6} sm={24} xs={24}>
             <div className="footer-center">
-              <h2>社区</h2>
+              <h2>Favourite readings</h2>
               <div>
-                <a href="#">
-                  更新记录
+                <a href="http://csapp.cs.cmu.edu/" target="_blank">
+                  Computer Systems: A Programmer's Perspective
                 </a>
               </div>
               <div>
-                <a href="#">
-                  常见问题
+                <a href="https://www.amazon.com/IA-64-Linux-Kernel-Design-Implementation/dp/0130610143" target="_blank">
+                  Linux Kernel: Design and Implementations
                 </a>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="https://gitter.im/ant-design/ant-design-pro">
-                  在线讨论
+                <a target="_blank" rel="noopener" href="http://haskellbook.com/">
+                  Haskell First Pricinple
                 </a>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="https://github.com/ant-design/ant-design-pro/issues">
-                  讨论列表
+                <a target="_blank" rel="noopener" href="https://mitpress.mit.edu/sites/default/files/sicp/index.html">
+                  Structure and Interpretation of Computer Programs
                 </a>
               </div>
               <div>
-                <a
-                  target="_blank"
-                  rel="noopener"
-                  href="http://ant.design/docs/resource/work-with-us"
-                >
-                  加入我们
+                <a target="_blank" rel="noopener" href="https://github.com/xianlubird/mydocker" >
+                  How to write yourself a Docker (Chinese)
                 </a>
               </div>
             </div>
@@ -106,63 +109,38 @@ function Footer() {
           <Col lg={6} sm={24} xs={24}>
             <div className="footer-center">
               <h2>
-                更多产品
+                People I used to work with
               </h2>
               <div>
-                <a target="_blank" rel="noopener" href="http://ant.design/">Ant Design</a>
+                  <a target="_blank" rel="noopener" href="https://dcollins.info/">Daniel Collins</a>
                 <span> - </span>
-                <span>蚂蚁 UI 设计体系</span>
+                <span>My mentor and best friend</span>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="https://antv.alipay.com/">AntV</a>
+                <a target="_blank" rel="noopener" href="https://www.rmit.edu.au/contact/staff-contacts/academic-staff/z/zhang-associate-professor-jenny">Jenny Zhang</a>
                 <span> - </span>
-                <span>蚂蚁数据可视化方案</span>
+                <span>My previous supervisor</span>
               </div>
               <div>
-                <a target="_blank" rel="noopener" href="https://eggjs.org/">Egg</a>
+                <a target="_blank" rel="noopener" href="http://sebastiankey.com/">Sebastiain Key</a>
                 <span> - </span>
-                <span>企业级 Node Web 开发框架</span>
+                <span>Colleague in Common Code</span>
               </div>
             </div>
           </Col>
         </Row>
       </div>
       <Row className="bottom-bar">
-        <Col lg={6} sm={24}>
-          <div className="translate-button">
-            <Button ghost size="small" >
-              English
-            </Button>
-          </div>
-        </Col>
-        <Col lg={18} sm={24}>
+        <Col sm={24}>
           <span
             style={{
               lineHeight: '16px',
               paddingRight: 12,
-              marginRight: 11,
-              borderRight: '1px solid rgba(255, 255, 255, 0.55)',
+              marginRight: 20,
             }}
-          >
-            <a
-              href="https://docs.alipay.com/policies/privacy/antfin"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              隐私权政策 ICP
-            </a>
+        >
+            Copyright © MIT licence
           </span>
-          <span style={{ marginRight: 24 }}>
-            <a
-              href="https://render.alipay.com/p/f/fd-izto3cem/index.html"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              权益保障承诺书
-            </a>
-          </span>
-          <span style={{ marginRight: 12 }}>ICP 证浙 B2-2-100257</span>
-          <span style={{ marginRight: 12 }}>Copyright © 蚂蚁金融服务集团</span>
         </Col>
       </Row>
     </footer>

@@ -41,35 +41,28 @@ const featuresCN = [
     content: 'As a haskell lover, I am familiar with functional programing techniques',
     src: 'assets/haskell.svg',
     color: '#FAAD14',
-    shadowColor: 'rgba(19,194,194,.12)',
+    shadowColor: 'rgba(250,174,20,.12)',
   },
   {
     title: 'ML researcher',
     content: 'Graduated with a ML research background',
     src: 'assets/pytorch.svg',
-    color: '#2F54EB',
-    shadowColor: 'rgba(47,84,235,.12)',
+    color: '#EE4C2C',
+    shadowColor: 'rgba(238,76,44,.12)',
   },
   {
     title: 'Security Awareness',
     content: 'Always aware of potential security weaknesses',
     src: 'assets/kali.svg',
-    color: '#FA8C16',
-    shadowColor: 'rgba(250,140,22,.12)',
+    color: '#000000',
+    shadowColor: 'rgba(0,0,0,.12)',
   },
   {
-    title: 'Love learning',
-    content: 'Works well with others in the team',
-    src: 'https://gw.alipayobjects.com/zos/rmsportal/aLQyKyUyssIUhHTZqCIb.svg',
-    color: '#EB2F96',
-    shadowColor: 'rgba(235,45,150,.12)',
-  },
-  {
-    title: 'Positive attitude',
-    content: 'Respect business decisions always priorities business benefits',
-    src: 'assets/positive.svg',
-    color: '#1890FF',
-    shadowColor: 'rgba(24,144,255,.12)',
+    title: 'Love evolving',
+    content: 'Always want to embrace better technologies and evolving',
+    src: 'assets/clojure.svg',
+    color: '#91DC47',
+    shadowColor: 'rgba(145,221,71,.12)',
   },
 ];
 
@@ -195,7 +188,7 @@ class Page1 extends React.PureComponent {
               Feature
             </Parallax>
           )}
-          <h2>What can <span>Pro</span> do for you </h2>
+          <h2>What can I <span>do</span></h2>
           <div className="title-line-wrapper page1-line">
             <div className="title-line" />
           </div>
