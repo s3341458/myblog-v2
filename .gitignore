@@ -2,3 +2,5 @@
 prod.env
 gcp_pw_credentials.json
 *.pem
+*node_modules
+*yarn-error.log

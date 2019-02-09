@@ -19,26 +19,26 @@ function Banner(props) {
           </div>
         </TweenOne>
       )}
-      <QueueAnim
-        className="banner-title-wrapper"
-        type={props.isMobile ? "bottom" : "right"}
-      >
+      <QueueAnim className="banner-title-wrapper"
+                 type={props.isMobile ? "bottom" : "right"} >
         <h1 key="h1">Cheng Yu</h1>
         <p key="content">
-            A programmer who have an large range of interests.
+            A passionate programmer who always wants to do better programming.
         </p>
         <div key="button" className="button-wrapper">
-
-          <a href="assets/resume_2019.pdf" target="_blank" rel="noopener noreferrer">
-            <Button type="primary">
-              Resume
-            </Button>
-          </a>
-          <a href="assets/cheng_pgp_key_pub" target="_blank" rel="noopener noreferrer">
-            <Button type="primary" style={{ margin: '0 16px' }} ghost>
-              PGP Key
-            </Button>
-          </a>
+            <a href="https://docs.google.com/document/d/1QnuNlOsj4LifZpDfTetrAOagIDRxoASNdlbEii2UeGQ/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <Button type="primary">
+                    Resume
+                </Button>
+            </a>
+            <a href="assets/cheng_pgp_key_pub" target="_blank" rel="noopener noreferrer">
+                <Button type="primary" style={{ margin: '0 16px' }} ghost>
+                    PGP Key
+                </Button>
+            </a>
           <a href="https://github.com/s3341458" target="_blank">
               <Icon style={{ margin: "0 10px" }}>
                   <FaGithub/>
