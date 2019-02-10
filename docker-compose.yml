@@ -3,12 +3,11 @@ version: '3'
 services:
   react-dev:
     build:
-      dockerfile: react_frontend/Dockerfile
       context: .
+      dockerfile: react_frontend/Dockerfile
     image: chengyu0316/myblog_v2_react
     volumes:
       - ./react_frontend:/app
-      - mnt:/mnt:rw
     env_file:
       - dev.env
     ports:
